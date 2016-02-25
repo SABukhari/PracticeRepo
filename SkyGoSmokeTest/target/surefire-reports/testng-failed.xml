@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test">
+    <classes>
+      <class name="com.bdd.SkyGo.SkyGoSmokeTest.TestSkyGoApp"/>
+      <class name="com.bdd.SkyGo.SkyGoSmokeTest.TestSkyMovies"/>
+    </classes>
+  </test> <!-- Surefire test -->
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="com.bdd.SkyGo.SkyGoSmokeTest.TestSkyGoApp">
+        <methods>
+          <include name="testSignInJourny"/>
+          <include name="testSportsLink"/>
+          <include name="beforeClass"/>
+          <include name="testCatchUpLink"/>
+          <include name="testSearchButton"/>
+          <include name="testRunMovie"/>
+          <include name="testSkyBoxSetsLink"/>
+          <include name="testSignOutJourny"/>
+        </methods>
+      </class> <!-- com.bdd.SkyGo.SkyGoSmokeTest.TestSkyGoApp -->
+      <class name="com.bdd.SkyGo.SkyGoSmokeTest.TestSkyMovies">
+        <methods>
+          <include name="testRunMovie"/>
+        </methods>
+      </class> <!-- com.bdd.SkyGo.SkyGoSmokeTest.TestSkyMovies -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
